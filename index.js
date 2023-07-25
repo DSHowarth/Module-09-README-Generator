@@ -1,6 +1,47 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+inquirer.prompt([{
+    type: 'input',
+    message: 'Please add a title for your README',
+    name: 'title'
+    },{
+    type: 'input',
+    message: 'Please input your description',
+    name: 'desc'
+    },{
+    type: 'input',
+    message: 'Please input your installation instructions',
+    name: 'installInstr'
+    },{
+    type: 'input',
+    message: 'Please input your usage instructions',
+    name: 'usageInstr'
+    },{
+    type: 'input',
+    message: 'Please input your contributing guidelines',
+    name: 'contributingInstr'
+    },{
+    type: 'input',
+    message: 'Please input your test instructions',
+    name: 'testInstr'
+    },{
+    type: 'input',
+    message: 'Please input your license, as precisely as possible',
+    name: 'license'
+    },{
+    type: 'input',
+    message: 'Please input your Github username',
+    name: 'userName'
+    },{
+    type: 'input',
+    message: 'Please input a contact email',
+    name: 'email'
+    }])
+    .then(function(response){
+        
+    })
+
 const template = `
 #${title}
 ![License Badge](https://img.shields.io/badge/${license})
