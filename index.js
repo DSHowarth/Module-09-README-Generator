@@ -40,9 +40,10 @@ inquirer.prompt([{
     }])
     .then(function(response){
         const {title, desc, installInstr, usageInstr, contributingInstr, testInstr, license, userName, email} = response
+        licenseUrl = license.split(' ').join('_');
         const template = 
 `# ${title}
-![License Badge](https://img.shields.io/badge/${license})
+![License Badge](https://img.shields.io/badge/${licenseUrl}-orange)
 
 ## Description
 
