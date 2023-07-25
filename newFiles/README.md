@@ -1,5 +1,5 @@
 # test
-![License Badge](https://img.shields.io/badge/GNU_General_Public_License_v3.0-orange)
+![License Badge](https://img.shields.io/badge/The_Unlicense-orange)
 
 ## Description
 
@@ -23,7 +23,7 @@ test
 
 ## License
 
-GNU General Public License v3.0 
+Governed by The Unlicense.
 
 ## Questions
 

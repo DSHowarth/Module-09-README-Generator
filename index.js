@@ -5,8 +5,7 @@ const licenses = [
     'GNU General Public License v3.0', 
     'Apache License 2.0', 
     'Mozilla Public License 2.0', 
-    'The Unlicense',
-    'No License']
+    'The Unlicense']
 
 inquirer.prompt([{
     type: 'input',
@@ -33,15 +32,14 @@ inquirer.prompt([{
     message: 'Please input your test instructions:',
     name: 'testInstr'
     },{
-    type: 'input',
+    type: 'number',
     message: `Please pick your license from the numbered list:
         0: MIT License
         1: GNU General Public License v3.0
         2: Apache License 2.0
         3: Mozilla Public License 2.0
         4: The Unlicense
-        5: No License
-        Enter number:`,
+    Enter license number (0-4):`,
     name: 'licenseNum'
     },{
     type: 'input',
@@ -81,7 +79,7 @@ ${testInstr}
 
 ## License
 
-${licenses[licenseNum]} 
+Governed under ${licenses[licenseNum]}.
 
 ## Questions
 
