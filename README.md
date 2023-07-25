@@ -16,6 +16,10 @@ Navigate to the Module-09-README-Generator directory,
 and run the program from the command line using ```node index.js```. 
 Answer the prompts, and enjoy your new README!
 
+## Technologies Used
+- JavaScript
+- Node.JS
+
 ## Contributing
 
 There *must* be better things for anyone to contribute to. 
