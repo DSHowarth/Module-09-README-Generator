@@ -7,6 +7,7 @@ const licenses = [
     'Mozilla Public License 2.0', 
     'The Unlicense']
 
+//prompt user for README information
 inquirer.prompt([{
     type: 'input',
     message: 'Please add a title for your README:',
@@ -52,12 +53,14 @@ inquirer.prompt([{
     }])
     .then(function(response){
         const {title, desc, installInstr, usageInstr, contributingInstr, testInstr, licenseNum, userName, email} = response
+        //Confirm that license selection is a whole number between 0 and 4
         if (!Number.isInteger(licenseNum) || licenseNum < 0 || licenseNum > 4){
             console.log('Sorry, your license selection must be a number from the list.')
             return;
         }
-
+        //reformat license name for use in badge URL
         licenseUrl = licenses[licenseNum].split(' ').join('_');
+        //ReadME template
         const template = 
 `# ${title}
 ![License Badge](https://img.shields.io/badge/${licenseUrl}-orange)
@@ -92,7 +95,7 @@ This repo was created by https://github.com/${userName}.
 
 Questions? Contact them at ${email}.
 `
-
+        //Create new README file with the completed template
         fs.writeFile('./newFiles/README.md', template, (err) =>
         err ? console.error(err) : console.log('README created'));
     })

@@ -1,5 +1,5 @@
 # test
-![License Badge](https://img.shields.io/badge/The_Unlicense-orange)
+![License Badge](https://img.shields.io/badge/Mozilla_Public_License_2.0-orange)
 
 ## Description
 
@@ -23,7 +23,7 @@ test
 
 ## License
 
-Governed by The Unlicense.
+Governed under Mozilla Public License 2.0.
 
 ## Questions
 
