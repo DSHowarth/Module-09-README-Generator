@@ -1,5 +1,5 @@
 # test
-![License Badge](https://img.shields.io/badge/test_license_AHHHHHHHHHHHHHHH-orange)
+![License Badge](https://img.shields.io/badge/GNU_General_Public_License_v3.0-orange)
 
 ## Description
 
@@ -23,7 +23,7 @@ test
 
 ## License
 
-test license AHHHHHHHHHHHHHHH 
+GNU General Public License v3.0 
 
 ## Questions
 

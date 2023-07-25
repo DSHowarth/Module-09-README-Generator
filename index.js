@@ -1,5 +1,12 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const licenses = [
+    'MIT License',
+    'GNU General Public License v3.0', 
+    'Apache License 2.0', 
+    'Mozilla Public License 2.0', 
+    'The Unlicense',
+    'No License']
 
 inquirer.prompt([{
     type: 'input',
@@ -27,8 +34,10 @@ inquirer.prompt([{
     name: 'testInstr'
     },{
     type: 'input',
-    message: 'Please input your license, as precisely as possible',
-    name: 'license'
+    message: `Please pick your license, as precisely as possible:
+                0: Gnu
+                1: No license`,
+    name: 'licenseNum'
     },{
     type: 'input',
     message: 'Please input your Github username',
@@ -39,8 +48,8 @@ inquirer.prompt([{
     name: 'email'
     }])
     .then(function(response){
-        const {title, desc, installInstr, usageInstr, contributingInstr, testInstr, license, userName, email} = response
-        licenseUrl = license.split(' ').join('_');
+        const {title, desc, installInstr, usageInstr, contributingInstr, testInstr, licenseNum, userName, email} = response
+        licenseUrl = licenses[licenseNum].split(' ').join('_');
         const template = 
 `# ${title}
 ![License Badge](https://img.shields.io/badge/${licenseUrl}-orange)
@@ -67,7 +76,7 @@ ${testInstr}
 
 ## License
 
-${license} 
+${licenses[licenseNum]} 
 
 ## Questions
 
