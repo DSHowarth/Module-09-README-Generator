@@ -39,40 +39,41 @@ inquirer.prompt([{
     name: 'email'
     }])
     .then(function(response){
-        
+        const {title, desc, installInstr, usageInst, contributingInstr, testInstr, license, userName, email} = response
+        const template = 
+        `#${title}
+        ![License Badge](https://img.shields.io/badge/${license})
+
+        ## Description
+
+        ${desc}
+
+        ## Installation
+
+        ${installInstr}
+
+        ## Usage
+
+        ${usageInstr}
+
+        ## Contributing
+
+        ${contributingInstr}
+
+        ## Tests
+
+        ${testInstr}
+
+        ## License
+
+        ${license} 
+
+        ## Questions
+
+        This repo was created by https://github.com/${userName}. 
+
+        Questions? Contact them at ${email}.
+        `
+        fs.writeFile('newREADME.md', template,)
     })
 
-const template = `
-#${title}
-![License Badge](https://img.shields.io/badge/${license})
-
-## Description
-
-${desc}
-
-## Installation
-
-${installInstr}
-
-## Usage
-
-${usageInstr}
-
-## Contributing
-
-${contributingInstr}
-
-## Tests
-
-${testInstr}
-
-## License
-
-${license} 
-
-## Questions
-
-This repo was created by https://github.com/${userName}. 
-
-Questions? Contact them at ${email}.
-`
