@@ -10,41 +10,46 @@ const licenses = [
 
 inquirer.prompt([{
     type: 'input',
-    message: 'Please add a title for your README',
+    message: 'Please add a title for your README:',
     name: 'title'
     },{
     type: 'input',
-    message: 'Please input your description',
+    message: 'Please input your description:',
     name: 'desc'
     },{
     type: 'input',
-    message: 'Please input your installation instructions',
+    message: 'Please input your installation instructions:',
     name: 'installInstr'
     },{
     type: 'input',
-    message: 'Please input your usage instructions',
+    message: 'Please input your usage instructions:',
     name: 'usageInstr'
     },{
     type: 'input',
-    message: 'Please input your contributing guidelines',
+    message: 'Please input your contributing guidelines:',
     name: 'contributingInstr'
     },{
     type: 'input',
-    message: 'Please input your test instructions',
+    message: 'Please input your test instructions:',
     name: 'testInstr'
     },{
     type: 'input',
-    message: `Please pick your license, as precisely as possible:
-                0: Gnu
-                1: No license`,
+    message: `Please pick your license from the numbered list:
+        0: MIT License
+        1: GNU General Public License v3.0
+        2: Apache License 2.0
+        3: Mozilla Public License 2.0
+        4: The Unlicense
+        5: No License
+        Enter number:`,
     name: 'licenseNum'
     },{
     type: 'input',
-    message: 'Please input your Github username',
+    message: 'Please input your Github username:',
     name: 'userName'
     },{
     type: 'input',
-    message: 'Please input a contact email',
+    message: 'Please input a contact email:',
     name: 'email'
     }])
     .then(function(response){
