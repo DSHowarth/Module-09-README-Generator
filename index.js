@@ -52,6 +52,11 @@ inquirer.prompt([{
     }])
     .then(function(response){
         const {title, desc, installInstr, usageInstr, contributingInstr, testInstr, licenseNum, userName, email} = response
+        if (!Number.isInteger(licenseNum) || licenseNum < 0 || licenseNum > 4){
+            console.log('Sorry, your license selection must be a number from the list.')
+            return;
+        }
+
         licenseUrl = licenses[licenseNum].split(' ').join('_');
         const template = 
 `# ${title}
