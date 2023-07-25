@@ -1,5 +1,9 @@
+const fs = require('fs');
+const inquirer = require('inquirer');
+
 const template = `
 #${title}
+![License Badge](https://img.shields.io/badge/${license})
 
 ## Description
 
@@ -27,7 +31,7 @@ ${license}
 
 ## Questions
 
-This repo was created and maintained by https://github.com/${userName}. 
+This repo was created by https://github.com/${userName}. 
 
-Questions? Contact them at ${email}
+Questions? Contact them at ${email}.
 `
