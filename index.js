@@ -39,41 +39,43 @@ inquirer.prompt([{
     name: 'email'
     }])
     .then(function(response){
-        const {title, desc, installInstr, usageInst, contributingInstr, testInstr, license, userName, email} = response
+        const {title, desc, installInstr, usageInstr, contributingInstr, testInstr, license, userName, email} = response
         const template = 
-        `#${title}
-        ![License Badge](https://img.shields.io/badge/${license})
+`# ${title}
+![License Badge](https://img.shields.io/badge/${license})
 
-        ## Description
+## Description
 
-        ${desc}
+${desc}
 
-        ## Installation
+## Installation
 
-        ${installInstr}
+${installInstr}
 
-        ## Usage
+## Usage
 
-        ${usageInstr}
+${usageInstr}
 
-        ## Contributing
+## Contributing
 
-        ${contributingInstr}
+${contributingInstr}
 
-        ## Tests
+## Tests
 
-        ${testInstr}
+${testInstr}
 
-        ## License
+## License
 
-        ${license} 
+${license} 
 
-        ## Questions
+## Questions
 
-        This repo was created by https://github.com/${userName}. 
+This repo was created by https://github.com/${userName}. 
 
-        Questions? Contact them at ${email}.
-        `
-        fs.writeFile('newREADME.md', template,)
+Questions? Contact them at ${email}.
+`
+
+        fs.writeFile('./newFiles/README.md', template, (err) =>
+        err ? console.error(err) : console.log('README created'));
     })
 
