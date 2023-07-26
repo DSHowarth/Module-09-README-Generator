@@ -1,5 +1,5 @@
 # Module 09: README Generator
-![License Badge](https://img.shields.io/badge/Mozilla_Public_License_2.0-orange)
+![License Badge](https://img.shields.io/badge/MIT_License-orange)
 
 ## Table of Contents
 - [Description](#description)
@@ -16,7 +16,7 @@
 This is a simple program for developing a professional README, quickly. You have to supply the content,
 but all of the structuring is done for you, ready to copy/paste into your own repo. <br>
 
-[Video Demonstration of using the program to create this README](https://drive.google.com/file/d/1w8aMG4t2g8hda0QCgmtUnstW7jC8-BZb/view?usp=sharing)
+[Video Demonstration of using the program to create (most of) this README](https://drive.google.com/file/d/1w8aMG4t2g8hda0QCgmtUnstW7jC8-BZb/view?usp=sharing)
 (Note: text is copied and pasted from off screen for brevity.)
 ## Installation
 
