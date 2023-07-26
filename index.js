@@ -105,7 +105,7 @@ This repo was created by https://github.com/${userName}.
 Questions? Contact them at ${email}.
 `
         //Create new README file with the completed template
-        fs.writeFile('./newFiles/README.md', template, (err) =>
+        fs.writeFile('./newREADME/README.md', template, (err) =>
         err ? console.error(err) : console.log('README created'));
     })
 
