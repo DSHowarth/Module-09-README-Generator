@@ -1,6 +1,15 @@
 # test
 ![License Badge](https://img.shields.io/badge/Mozilla_Public_License_2.0-orange)
 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
+
 ## Description
 
 test

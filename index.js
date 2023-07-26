@@ -65,6 +65,15 @@ inquirer.prompt([{
 `# ${title}
 ![License Badge](https://img.shields.io/badge/${licenseUrl}-orange)
 
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
+
 ## Description
 
 ${desc}
